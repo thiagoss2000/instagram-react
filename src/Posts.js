@@ -48,6 +48,7 @@ export default function Posts() {
             <div className="posts">
             {posts.map((pt) => (
                 <Post 
+                key={pt.image+pt.name}
                 image={pt.image}
                 name={pt.name}
                 conteudo={pt.conteudo}

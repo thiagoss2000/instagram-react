@@ -22,6 +22,7 @@ export default function Sidebar(props) {
         </div>
         {sugestao.map((sg) => (
           <Sugestao 
+            key={sg.name}
             image={sg.image}
             name={sg.name}
             razao={sg.razao}
